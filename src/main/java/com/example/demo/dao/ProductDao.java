@@ -5,10 +5,13 @@
  */
 package com.example.demo.dao;
 
+import com.example.demo.entitiy.Product;
+import org.springframework.data.repository.PagingAndSortingRepository;
+
 /**
  *
  * @author User
  */
-public interface ProductDao {
+public interface ProductDao extends PagingAndSortingRepository<Product, String>{
     
 }
